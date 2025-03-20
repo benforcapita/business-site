@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Star, Award, ShieldCheck } from "lucide-react";
+import { Code, Zap, Lightbulb } from "lucide-react";
 
 const Features = () => {
   return (
@@ -7,26 +8,26 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-white">
-            How it works?
+            How I Can Help
           </h2>
-          <p className="text-white/80">Our AI-powered platform simplifies tech recruitment</p>
+          <p className="text-white/80">Leveraging AI to create powerful solutions for your business</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              icon: Star,
-              title: "Post Your Requirements",
-              description: "Specify your needs and let our AI match you with the perfect candidates",
+              icon: Lightbulb,
+              title: "Custom App Development",
+              description: "From concept to deployment, I build AI-powered mini apps tailored to your specific business needs",
             },
             {
-              icon: Award,
-              title: "Review Matches",
-              description: "Get a curated list of pre-screened candidates that match your criteria",
+              icon: Zap,
+              title: "AI Integration",
+              description: "Transform your business with smart AI features that automate tasks and improve decision-making",
             },
             {
-              icon: ShieldCheck,
-              title: "Hire the Best",
-              description: "Interview and hire top tech talent efficiently",
+              icon: Code,
+              title: "Technical Consultation",
+              description: "Get expert advice on your technical challenges from someone with 10+ years of experience",
             },
           ].map((feature, index) => (
             <div 
