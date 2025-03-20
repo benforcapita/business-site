@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const MobilePreview = () => {
   return (
-    <section className="py-20 px-4">
+    <section id="portfolio" className="py-20 px-4">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h2 className="text-4xl font-bold">AI-Powered Mini Apps</h2>
