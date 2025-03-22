@@ -1,7 +1,19 @@
 
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
+import { 
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger 
+} from "@/components/ui/dropdown-menu";
+import { Globe } from "lucide-react";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  const { currentLanguage, changeLanguage, isRTL } = useLanguage();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,7 +34,7 @@ const Navbar = () => {
         >
           Ben Blum
         </a>
-        <div className="hidden md:flex items-center space-x-8">
+        <div className={`hidden md:flex items-center ${isRTL ? 'space-x-reverse space-x-8' : 'space-x-8'}`}>
           <a 
             href="#services" 
             onClick={(e) => {
@@ -31,7 +43,7 @@ const Navbar = () => {
             }}
             className="text-white/90 hover:text-white transition-colors"
           >
-            Services
+            {t('navbar.services')}
           </a>
           <a 
             href="#portfolio" 
@@ -41,7 +53,7 @@ const Navbar = () => {
             }}
             className="text-white/90 hover:text-white transition-colors"
           >
-            Portfolio
+            {t('navbar.portfolio')}
           </a>
           <a 
             href="#about" 
@@ -51,7 +63,7 @@ const Navbar = () => {
             }}
             className="text-white/90 hover:text-white transition-colors"
           >
-            About Me
+            {t('navbar.about')}
           </a>
           <a 
             href="#blog" 
@@ -61,15 +73,39 @@ const Navbar = () => {
             }}
             className="text-white/90 hover:text-white transition-colors"
           >
-            Blog
+            {t('navbar.blog')}
           </a>
         </div>
-        <Button 
-          className="bg-mint hover:bg-mint/90 text-forest font-medium"
-          onClick={() => scrollToSection("contact")}
-        >
-          Contact Me
-        </Button>
+        <div className="flex items-center gap-4">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="icon" className="border-mint/20 bg-transparent hover:bg-mint/10">
+                <Globe className="h-4 w-4 text-mint" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem 
+                onClick={() => changeLanguage('en')}
+                className={currentLanguage === 'en' ? 'bg-mint/10 text-mint' : ''}
+              >
+                English
+              </DropdownMenuItem>
+              <DropdownMenuItem 
+                onClick={() => changeLanguage('he')}
+                className={currentLanguage === 'he' ? 'bg-mint/10 text-mint' : ''}
+              >
+                עברית
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          
+          <Button 
+            className="bg-mint hover:bg-mint/90 text-forest font-medium"
+            onClick={() => scrollToSection("contact")}
+          >
+            {t('navbar.contact')}
+          </Button>
+        </div>
       </div>
     </nav>
   );

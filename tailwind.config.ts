@@ -33,7 +33,51 @@ export default {
       fontFamily: {
         sans: ["Inter var", "system-ui", "sans-serif"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '65ch',
+            color: '#FFFFFF',
+            h1: {
+              color: '#64FFDA',
+            },
+            h2: {
+              color: '#64FFDA',
+            },
+            h3: {
+              color: '#64FFDA',
+            },
+            h4: {
+              color: '#64FFDA',
+            },
+            strong: {
+              color: '#FFFFFF',
+            },
+            a: {
+              color: '#64FFDA',
+              '&:hover': {
+                color: '#64FFDA',
+                opacity: 0.8,
+              },
+            },
+            code: {
+              color: '#FFFFFF',
+              backgroundColor: '#132B41',
+              padding: '0.2em 0.4em',
+              borderRadius: '0.25rem',
+            },
+            blockquote: {
+              borderLeftColor: '#64FFDA',
+              color: '#FFFFFF',
+              opacity: 0.9,
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+  ],
 } satisfies Config;

@@ -1,0 +1,185 @@
+{
+  "common": {
+    "readMore": "Read more →"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "AI-Powered App Development to Transform Your Business",
+    "subtitle": "Custom Micro SaaS and AI Solutions for Small Businesses",
+    "cta": "Get Started",
+    "secondaryCta": "Learn More"
+  },
+  "features": {
+    "title": "How I Can Help",
+    "subtitle": "Leveraging AI to create powerful solutions for your business",
+    "service1": {
+      "title": "Custom App Development",
+      "description": "From concept to deployment, I build AI-powered mini apps tailored to your specific business needs"
+    },
+    "service2": {
+      "title": "AI Integration",
+      "description": "Transform your business with smart AI features that automate tasks and improve decision-making"
+    },
+    "service3": {
+      "title": "Technical Consultation",
+      "description": "Get expert advice on your technical challenges from someone with 10+ years of experience"
+    }
+  },
+  "mobilePreview": {
+    "title": "AI-Powered Mini Apps",
+    "subtitle": "I specialize in creating powerful, compact applications that leverage AI to solve specific business problems.",
+    "benefit1": "Reduce operational costs",
+    "benefit2": "Improve customer experience",
+    "benefit3": "Data-driven decision making",
+    "category1": "Mobile App",
+    "category2": "Web Application",
+    "category3": "Tablet Dashboard",
+    "project1": {
+      "title": "Inventory AI Assistant",
+      "description": "An AI-powered inventory management system that predicts stock needs and automates reordering."
+    },
+    "project2": {
+      "title": "Customer Service Bot",
+      "description": "Intelligent chatbot that handles 80% of customer inquiries without human intervention."
+    },
+    "project3": {
+      "title": "Sales Analytics Dashboard",
+      "description": "Real-time sales performance tracker with AI-powered insights and forecasting."
+    },
+    "viewDetails": "View Details",
+    "viewAllProjects": "View All Projects"
+  },
+  "stats": {
+    "title": "Proven Results for Small Businesses",
+    "stat1": {
+      "value": "40%",
+      "label": "Average Efficiency Improvement"
+    },
+    "stat2": {
+      "value": "3",
+      "label": "Month Average ROI Timeline"
+    },
+    "stat3": {
+      "value": "24/7",
+      "label": "Always-On Business Operations"
+    }
+  },
+  "testimonials": {
+    "title": "Client Success Stories",
+    "subtitle": "Here's what businesses say about working with me",
+    "testimonial1": {
+      "quote": "Ben transformed our business with a custom AI app that automated our customer service. Return on investment in just 3 months!",
+      "author": "Sarah Chen",
+      "role": "Founder, RetailFlow"
+    },
+    "testimonial2": {
+      "quote": "Working with Ben was incredible. He understood our needs immediately and delivered a solution that exceeded our expectations.",
+      "author": "Michael Rodriguez",
+      "role": "CEO, TechGrowth"
+    },
+    "testimonial3": {
+      "quote": "The mini app Ben built helped us increase efficiency by 40%. His technical expertise and business understanding are unmatched.",
+      "author": "Emily Watson",
+      "role": "Operations Manager, CloudPeak"
+    }
+  },
+  "blog": {
+    "title": "Latest Insights",
+    "subtitle": "Thoughts on AI, app development, and business growth",
+    "post1": {
+      "title": "Leveraging AI in Small Business Applications",
+      "excerpt": "How small businesses can use AI to automate tasks and improve customer experience.",
+      "date": "May 15, 2023"
+    },
+    "post2": {
+      "title": "The Rise of Micro SaaS Applications",
+      "excerpt": "Why focused, single-purpose applications are changing the software landscape.",
+      "date": "April 22, 2023"
+    },
+    "post3": {
+      "title": "Building Apps That Scale with Your Business",
+      "excerpt": "Design principles for creating applications that grow alongside your company.",
+      "date": "March 10, 2023"
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Get in touch to discuss how I can help with your next project",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "Your email",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "copyright": "© 2023 Ben Blum. All rights reserved.",
+    "language": "Language"
+  },
+  "previews": {
+    "common": {
+      "close": "Close"
+    },
+    "inventory": {
+      "title": "Inventory AI Assistant",
+      "addItem": "Add Item",
+      "searchPlaceholder": "Search products...",
+      "units": "units",
+      "currentStock": "Current Stock",
+      "threshold": "Reorder Threshold",
+      "aiInsight": "AI Assistant Insight",
+      "restock": "Restock Now",
+      "close": "Close",
+      "status": {
+        "ok": "In Stock",
+        "low": "Low Stock",
+        "critical": "Critical"
+      },
+      "suggestions": {
+        "ok": "Inventory levels for {name} are optimal. No action needed at this time.",
+        "low": "Inventory for {name} is running low. Consider ordering {count} more units based on historical sales patterns.",
+        "critical": "Critical alert: {name} inventory is below threshold. Recommend ordering {count} units immediately to avoid stockout situation."
+      }
+    },
+    "chatbot": {
+      "title": "Customer Service Bot",
+      "online": "Online",
+      "inputPlaceholder": "Type your message here..."
+    },
+    "dashboard": {
+      "title": "Sales Analytics Dashboard",
+      "timeRange": "Time Range",
+      "timeRanges": {
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "totalSales": "Total Sales",
+      "averageOrder": "Avg. Order",
+      "totalCustomers": "Customers",
+      "conversion": "Conversion",
+      "sinceLast": "since last period",
+      "tabs": {
+        "sales": "Sales Performance",
+        "products": "Product Analysis"
+      },
+      "productPerformance": "Product Performance",
+      "categoryBreakdown": "Category Breakdown",
+      "aiInsightsTitle": "AI-Generated Insights",
+      "insights": {
+        "seasonal": "Sales are trending 12.3% higher than the same period last year, suggesting strong seasonal growth.",
+        "categoryGrowth": "Electronics category showing the highest growth rate at 35%. Consider increasing marketing budget for this segment.",
+        "customerBehavior": "Customer retention has decreased slightly. Recommend implementing a loyalty program to improve retention rates."
+      }
+    }
+  }
+}
