@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Monitor, Smartphone, Tab } from "lucide-react";
+import { ArrowRight, Monitor, Smartphone, Laptop } from "lucide-react";
 
 const Portfolio = () => {
   const projects = [
@@ -23,7 +23,7 @@ const Portfolio = () => {
       description: "Real-time sales performance tracker with AI-powered insights and forecasting.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692",
       category: "Tablet Dashboard",
-      icon: <Tab className="h-5 w-5 text-mint" />
+      icon: <Laptop className="h-5 w-5 text-mint" />
     }
   ];
 
